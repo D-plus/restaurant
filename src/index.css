@@ -1,10 +1,17 @@
+@font-face {
+  font-family: Karla; src: url('fonts/Karla-Regular.ttf');
+}
+
 body {
-  margin: 0;
+  max-width: 1440px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 code {
