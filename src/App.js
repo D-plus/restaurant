@@ -1,14 +1,19 @@
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import Footer from './components/Footer/Footer';
+import ReserveTable from './pages/ReserveTable/ReserveTable';
+import Home from './pages/Home/Home';
+
+import './App.css';
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
-      <Footer />
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path="/reserve-table" element={ <ReserveTable /> } />
+      </Routes>
     </>
   );
 }

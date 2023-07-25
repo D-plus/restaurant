@@ -1,4 +1,5 @@
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -8,10 +9,10 @@ function Footer() {
         <div className="footer-navigation-section-wrapper">
           <span className="footer-title">Doormat Navigation</span>
           <ul className="footer-navigations-list">
-            <li><a href="/">Home</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/reserve-table">Reservations</Link></li>
             <li><a href="/about">About</a></li>
             <li><a href="/menu">Menu</a></li>
-            <li><a href="/reservations">Reservations</a></li>
             <li><a href="/order-online">Order online</a></li>
             <li><a href="/login">Login</a></li>
           </ul>

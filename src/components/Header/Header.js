@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { Link } from "react-router-dom";
 
 import './Header.css';
 
@@ -14,10 +15,10 @@ function Header() {
         <img src="assets/logo.svg" className="header__image" alt="Little lemon logo" />
         <nav className="header__nav">
           <ul className="navigations-list">
-            <li><a href="/">Home</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/reserve-table">Reservations</Link></li>
             <li><a href="/about">About</a></li>
             <li><a href="/menu">Menu</a></li>
-            <li><a href="/reservations">Reservations</a></li>
             <li><a href="/order-online">Order online</a></li>
             <li><a href="/login">Login</a></li>
           </ul>
@@ -31,10 +32,10 @@ function Header() {
       </section>
       <section className={mobileNavClasses}>
         <ul className="mobile-navigations-list">
-          <li><a href="/">Home</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/reserve-table">Reservations</Link></li>
           <li><a href="/about">About</a></li>
           <li><a href="/menu">Menu</a></li>
-          <li><a href="/reservations">Reservations</a></li>
           <li><a href="/order-online">Order online</a></li>
           <li><a href="/login">Login</a></li>
         </ul>

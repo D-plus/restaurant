@@ -33,6 +33,7 @@ function Specials() {
         <main className="specials__cards-list">
           {SPECIALS_LIST_DATA.map(({ title, description, imageSrc, price }) => (
             <Card
+              key={title}
               title={title}
               description={description}
               imageSrc={imageSrc}

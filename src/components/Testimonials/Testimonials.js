@@ -34,7 +34,7 @@ function Testimonials() {
           <h2 className="testimonials__heading">Testimonials</h2>
           <section className="testimonials__feedback-list">
             {FEEDBACK.map(({ name, feedback, imageSrc}) => (
-              <TestimonialCard name={name} feedback={feedback} imageSrc={imageSrc} />
+              <TestimonialCard key={`${name} ${feedback}`} name={name} feedback={feedback} imageSrc={imageSrc} />
             ))}
           </section>
           <Button>Reserve a Table</Button>
