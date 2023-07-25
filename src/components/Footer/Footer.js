@@ -2,7 +2,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer>
+    <footer className="app-footer-wrapper">
       <img src="assets/footer-image.png" alt="View from the restaurant" />
       <nav>
         <div className="footer-navigation-section-wrapper">

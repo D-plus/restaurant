@@ -1,0 +1,18 @@
+.button__primary {
+  background-color: #F4CE14;
+  max-width: 260px;
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 10px;
+  color: #333;
+  font-family: Karla, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.button__primary:hover {
+  background-color: #EE9972;
+  cursor: pointer;
+}

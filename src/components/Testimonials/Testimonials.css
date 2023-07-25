@@ -1,0 +1,70 @@
+.testimonials__wrapper-background {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 0 56px;
+  background-color: var(--secondary-1);
+}
+
+.testimonials__wrapper-background:after {
+  z-index: 1;
+  height: 48px;
+  content: '';
+  position: absolute;
+  background-image: url("../../../public/assets/decoration-peach.svg");
+  background-position: bottom;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -48px;
+}
+
+.testimonials__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.testimonials__heading {
+  font-family: Markazi Text, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 70px;
+}
+
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__feedback-list {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  gap: 80px;
+  margin-bottom: 70px;
+}
+
+/*.testimonials__extended-section {*/
+/*  height: 100%;*/
+/*  background-color: #495E57;*/
+/*  position: absolute;*/
+/*}*/
+
+@media (max-width: 1200px) {
+  .testimonials__feedback-list {
+    justify-content: center;
+    gap: 46px;
+  }
+}
+
+@media (max-width: 890px) {
+  .testimonials__wrapper-background {
+    padding: 56px 0;
+  }
+}

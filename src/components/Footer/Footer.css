@@ -1,4 +1,4 @@
-footer {
+.app-footer-wrapper {
   background-color: #FBDABB;
   display: flex;
   flex-direction: row;
@@ -7,13 +7,13 @@ footer {
   padding: 72px 20px;
 }
 
-nav {
+.app-footer-wrapper nav {
   display: flex;
   flex-direction: row;
   gap: 74px;
 }
 
-footer .footer-navigations-list {
+.app-footer-wrapper .footer-navigations-list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -23,7 +23,7 @@ footer .footer-navigations-list {
   gap: 10px;
 }
 
-footer .footer-navigations-list li a {
+.app-footer-wrapper .footer-navigations-list li a {
   font-family: Karla, serif;
   font-size: 18px;
   font-style: normal;
@@ -33,16 +33,16 @@ footer .footer-navigations-list li a {
   text-transform: capitalize;
 }
 
-footer .footer-navigations-list li a:hover {
+.app-footer-wrapper .footer-navigations-list li a:hover {
   text-decoration: underline;
 }
 
-footer img {
+.app-footer-wrapper img {
   max-height: 300px;
   margin-right: 74px;
 }
 
-footer .footer-title {
+.app-footer-wrapper .footer-title {
   font-family: Karla, serif;
   font-size: 16px;
   font-style: normal;
@@ -52,7 +52,7 @@ footer .footer-title {
   min-height: 38px;
 }
 
-footer a {
+.app-footer-wrapper a {
   font-family: Karla, serif;
   font-size: 16px;
   font-style: normal;
@@ -67,16 +67,16 @@ footer a {
 }
 
 @media (max-width: 736px) {
-  footer {
+  .app-footer-wrapper {
     flex-direction: column;
   }
 
-  nav {
+  .app-footer-wrapper nav {
     flex-direction: column;
     gap: 46px;
   }
 
-  footer img {
+  .app-footer-wrapper img {
     margin: 46px 0 0 0;
     order: 1;
   }

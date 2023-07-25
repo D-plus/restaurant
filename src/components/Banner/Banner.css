@@ -1,0 +1,127 @@
+.banner__wrapper-background {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 86px 0 56px;
+  background-color: #fff;
+}
+
+.banner__wrapper-background:after {
+  z-index: -1;
+  height: 48px;
+  content: '';
+  position: absolute;
+  background-image: url("../../../public/assets/decoration.svg");
+  background-position: bottom;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -48px;
+}
+
+.banner__wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.banner__pictures {
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+}
+
+.banner__image-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.banner__image-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+.banner__heading {
+  font-family: Markazi Text, serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #333;
+}
+
+.banner__sub-heading {
+  display: block;
+  font-family: Markazi Text, serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+.banner__description {
+  color: #333;
+  font-family: Karla, serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 540px;
+  margin-bottom: 20px;
+}
+
+.banner__description.banner__description-last {
+  margin-bottom: 86px;
+}
+
+/*.banner__extended-section {*/
+/*  height: 100%;*/
+/*  background-color: #495E57;*/
+/*  position: absolute;*/
+/*}*/
+
+@media (max-width: 1030px) {
+  .banner__wrapper {
+    flex-direction: column;
+  }
+
+  .banner__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  .banner__description {
+    max-width: 440px;
+  }
+
+  .banner__pictures {
+    max-width: unset;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .banner__image-up,
+  .banner__image-down {
+    position: static;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner__heading {
+    font-size: 60px;
+  }
+}
