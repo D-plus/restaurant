@@ -1,0 +1,28 @@
+.date-picker__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 228px;
+  width: 100%;
+}
+
+.date-picker__input-label {
+  font-family: Karla, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.date-picker__input {
+  border-style: solid;
+  border-color: var(--primary-1);
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-family: 'Karla', serif;
+  font-size: 16px;
+}
+
+/*input.date-picker__input::-webkit-datetime-edit {*/
+/*  font-family: 'Karla';*/
+/*  font-size: 16px;*/
+/*}*/

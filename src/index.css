@@ -1,5 +1,6 @@
 :root {
   --secondary-1: #EE9972;
+  --primary-1: #495E57;
 }
 
 
@@ -35,4 +36,20 @@ h1,h2,h3,h4,h5,h6 {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  font: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-image: url("/public/assets/icons/arrowUp.svg");
+  background-position: right 15px top 1em, right 10px top 1em;
 }

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   padding: 56px 0;
-  background-color: #495E57;
+  background-color: var(--primary-1);
 }
 
 .hero__wrapper-background:after {
@@ -50,6 +50,10 @@
   line-height: normal;
   margin-bottom: 32px;
   color: #FFF;
+}
+
+.hero__text-content {
+  min-height: 364px;
 }
 
 .hero__description {

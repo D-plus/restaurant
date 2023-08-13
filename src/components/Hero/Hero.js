@@ -1,15 +1,21 @@
+import { Link } from "react-router-dom";
 import Button from '../Button/Button';
+
 import './Hero.css';
 
-function Hero() {
+function Hero({ title = 'Little Lemon', hideCallToAction }) {
   return (
     <section className="hero__wrapper-background">
       <section className="hero__wrapper container">
         <article className="hero__text-content">
-          <h1 className="hero__heading">Little Lemon</h1>
+          <h1 className="hero__heading">{title}</h1>
           <span className="hero__sub-heading">Chicago</span>
           <p className="hero__description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-          <Button>Reserve a Table</Button>
+          {!hideCallToAction && (
+            <Link to="/reserve-table">
+              <Button>Reserve a Table</Button>
+            </Link>
+          )}
         </article>
         <img src="assets/hero-image.svg" className="hero__image" alt="Bruschetas" />
       </section>

@@ -1,0 +1,54 @@
+.booking-page__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+  max-width: 1440px;
+  margin: 52px auto 46px;
+}
+
+.booking-page__main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.booking-page__header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 20px;
+}
+
+.booking-page__header h2 {
+  font-family: Inter, serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.booking-page__image {
+  height: 50px;
+}
+
+.main-booking-page__container {
+  min-height: 55vh;
+  width: 100%;
+}
+
+
+
+@media (max-width: 1188px) {
+
+}
+
+@media (max-width: 860px) {
+
+}

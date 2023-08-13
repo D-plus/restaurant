@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
 import TestimonialCard from '../TestimonialCard/TestimonialCard';
 
@@ -37,7 +38,9 @@ function Testimonials() {
               <TestimonialCard key={`${name} ${feedback}`} name={name} feedback={feedback} imageSrc={imageSrc} />
             ))}
           </section>
-          <Button>Reserve a Table</Button>
+          <Link to="/reserve-table">
+            <Button>Reserve a Table</Button>
+          </Link>
         </article>
       </section>
     </section>

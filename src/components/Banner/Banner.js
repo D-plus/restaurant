@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import Button from '../Button/Button';
+
 import './Banner.css';
 
 function Banner() {
@@ -14,7 +16,9 @@ function Banner() {
           <p className="banner__description banner__description-last">
             Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard great Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard great.
           </p>
-          <Button>Reserve a Table</Button>
+          <Link to="/reserve-table">
+            <Button>Reserve a Table</Button>
+          </Link>
         </article>
         <section className="banner__pictures">
           <img src="assets/banner-under.svg" className="banner__image-down" alt="restaurant interior" />

@@ -16,3 +16,8 @@
   background-color: #EE9972;
   cursor: pointer;
 }
+
+.button__small {
+  padding: 10px 0;
+  max-width: 232px;
+}

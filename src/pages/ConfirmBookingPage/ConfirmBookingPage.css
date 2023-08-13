@@ -1,0 +1,37 @@
+.confirm-booking-page__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  padding: 0 20px;
+}
+
+.confirm-booking-page__info-container span {
+  font-family: Karla, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+.confirm-booking-page__info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.confirm-booking-page__actions-container {
+  width: 130px
+}
+
+@media (max-width: 1188px) {
+
+}
+
+@media (max-width: 860px) {
+
+}

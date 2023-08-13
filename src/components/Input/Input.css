@@ -1,0 +1,23 @@
+.input__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 228px;
+  width: 100%;
+}
+
+.input__label {
+  font-family: Karla, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.input__element {
+  border-style: solid;
+  border-color: var(--primary-1);
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-family: 'Karla', serif;
+  font-size: 16px;
+}
