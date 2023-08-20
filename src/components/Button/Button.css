@@ -12,6 +12,10 @@
   line-height: 20px;
 }
 
+.button__primary.submit {
+  border: none;
+}
+
 .button__primary:hover {
   background-color: #EE9972;
   cursor: pointer;

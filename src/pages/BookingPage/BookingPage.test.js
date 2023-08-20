@@ -1,5 +1,8 @@
+import { BrowserRouter }  from "react-router-dom";
+import { render } from '@testing-library/react';
 import BookingPage, { fetchData } from './BookingPage';
 import * as BookingPageMethods from './BookingPage';
+import * as apiHelpers from '../../helpers/api-handlers';
 
 const defaultState = [
   { value: '18:00', label: '18:00' },
@@ -8,10 +11,11 @@ const defaultState = [
 ];
 
 describe('BookingPage', () => {
-  describe('initializeTimes', () => {
-    xtest('calls fetchData method', () => {
-      const spyOnInitializeTimes = jest.spyOn(BookingPageMethods, 'fetchData');
-      BookingPageMethods.initializeTimes(jest.fn());
+  describe('after component mount', () => {
+    test('calls initializeTimes method', async () => {
+      const spyOnInitializeTimes = jest.spyOn(apiHelpers, 'initializeTimes');
+
+      await render(<BrowserRouter><BookingPage /></BrowserRouter>);
 
       expect(spyOnInitializeTimes).toHaveBeenCalled();
     });

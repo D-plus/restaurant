@@ -1,7 +1,7 @@
 import React from 'react';
 import './Select.css';
 
-function Select({ label, id, options = [], onChange = () => {}, value, dataTestId }) {
+function Select({ label, id, options = [], onChange = () => {}, value, dataTestId, required = false }) {
   return (
     <div className="select__container">
       <label className="select__select-label" htmlFor={id}>{label}</label>
@@ -11,6 +11,7 @@ function Select({ label, id, options = [], onChange = () => {}, value, dataTestI
         className="select__select"
         id={id}
         data-testid={dataTestId}
+        required={required}
       >
         {options?.map(({ label, value }) => (
           <option

@@ -1,20 +1,42 @@
+import React, { useMemo } from 'react';
 import './Button.css';
-import { useMemo } from 'react';
 
-function Button({ children, type = 'button', onClick = () => {}, size = "large", dataTestId }) {
+function Button({
+  children,
+  type = 'button',
+  onClick = () => {},
+  size = "large",
+  disabled = false,
+  dataTestId,
+  areaLabel = 'Navigation button',
+}) {
   const buttonClasses = useMemo(() => {
-    return `button__primary button__${size}`
-  }, [size]);
+    return `button__primary button__${size} ${type}`
+  }, [size, type]);
 
   return (
-    <button
-      className={buttonClasses}
-      type={type}
-      onClick={onClick}
-      data-testid={dataTestId}
-    >
-      {children}
-    </button>
+    <>
+      {type === 'submit' ? (
+        <input
+          className={buttonClasses}
+          type="submit"
+          value={children}
+          data-testid={dataTestId}
+          aria-label="Submit"
+        />
+      ) : (
+        <button
+          className={buttonClasses}
+          type={type}
+          data-testid={dataTestId}
+          disabled={disabled}
+          aria-label={areaLabel}
+          onClick={onClick}
+        >
+          {children}
+        </button>
+      )}
+    </>
   );
 }
 

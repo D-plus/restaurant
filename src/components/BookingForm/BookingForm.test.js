@@ -15,7 +15,7 @@ describe('BookingForm', () => {
 
     const bookingFormSubmitButton = screen.getByTestId('SubmitButton');
 
-    expect(bookingFormSubmitButton).toHaveTextContent('Submit Reservation');
+    expect(bookingFormSubmitButton).toHaveValue('Submit Reservation');
   });
 
   test('submits form with correct values from inputs text of submit button', async () => {
@@ -49,5 +49,45 @@ describe('BookingForm', () => {
     expect(spyOnSubmit).toHaveBeenCalledWith({
       selectedDate: '2023-08-07', selectedTime: '18', numberOfGuests: '6', selectedOccasion: '4',
     });
+  });
+
+  test('DatePicker has validation required attribute applied', () => {
+    render(<BookingForm />);
+
+    const datePickerInput = screen.getByTestId('DatePickerDate');
+
+    expect(datePickerInput).toHaveAttribute('required');
+  });
+
+  test('TimePicker select has validation required attribute applied', () => {
+    render(<BookingForm />);
+
+    const timePickerInput = screen.getByTestId('timePickerSelect');
+
+    expect(timePickerInput).toHaveAttribute('required');
+  });
+
+  test('inputNumberOfGuests has validation required attribute applied', () => {
+    render(<BookingForm />);
+
+    const inputNumberOfGuests = screen.getByTestId('InputNumberOfGuests');
+
+    expect(inputNumberOfGuests).toHaveAttribute('required');
+  });
+
+  test('occasion select has validation required attribute applied', () => {
+    render(<BookingForm />);
+
+    const selectOccasion = screen.getByTestId('SelectOccasion');
+
+    expect(selectOccasion).toHaveAttribute('required');
+  });
+
+  test('inputNumberOfGuests has min attribute applied', () => {
+    render(<BookingForm />);
+
+    const inputNumberOfGuests = screen.getByTestId('InputNumberOfGuests');
+
+    expect(inputNumberOfGuests.getAttribute('min')).toEqual('2');
   });
 });
