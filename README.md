@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Getting Started with Little Lemon website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Link to the Figma design mockup, wireframes, UI-Kit, Brand style guide:
+https://www.figma.com/file/RBztoVmXGgow8l96KlrC4l/Untitled?type=design&node-id=0%3A1&mode=dev
+ 
 
 ## Available Scripts
 
