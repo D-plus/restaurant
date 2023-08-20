@@ -5,10 +5,8 @@
   max-width: 600px;
 }
 
-@media (max-width: 1188px) {
-
-}
-
-@media (max-width: 860px) {
-
+@media (max-width: 536px) {
+  .booking-form {
+    justify-content: center;
+  }
 }

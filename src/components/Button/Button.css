@@ -1,7 +1,6 @@
 .button__primary {
   background-color: #F4CE14;
-  max-width: 260px;
-  width: 100%;
+  width: 260px;
   padding: 20px 0;
   border-radius: 10px;
   color: #333;
@@ -23,5 +22,5 @@
 
 .button__small {
   padding: 10px 0;
-  max-width: 232px;
+  width: 232px;
 }
